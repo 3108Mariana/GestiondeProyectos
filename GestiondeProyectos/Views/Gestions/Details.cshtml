@@ -1,0 +1,79 @@
+﻿@model GestiondeProyectos.Models.Gestion
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Gestion</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Apellido_Paterno)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Apellido_Paterno)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Apellido_Materno)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Apellido_Materno)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre_proyecto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre_proyecto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tiempo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tiempo)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre_tareas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre_tareas)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Rol_asignado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Rol_asignado)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Numero_actividades)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Numero_actividades)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
